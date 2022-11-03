@@ -1,0 +1,11 @@
+C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\bin\Debug\cursoDeNet.exe.config
+C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\bin\Debug\cursoDeNet.exe
+C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\bin\Debug\cursoDeNet.pdb
+C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\obj\Debug\cursoDeNet.csproj.AssemblyReference.cache
+C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\obj\Debug\cursoDeNet.csproj.SuggestedBindingRedirects.cache
+C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\obj\Debug\cursoDeNet.Form1.resources
+C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\obj\Debug\cursoDeNet.Properties.Resources.resources
+C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\obj\Debug\cursoDeNet.csproj.GenerateResource.cache
+C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\obj\Debug\cursoDeNet.csproj.CoreCompileInputs.cache
+C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\obj\Debug\cursoDeNet.exe
+C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\obj\Debug\cursoDeNet.pdb
