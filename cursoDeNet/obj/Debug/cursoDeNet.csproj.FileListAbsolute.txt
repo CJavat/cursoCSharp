@@ -39,3 +39,5 @@ C:\Users\hortomallas\Documents\Programación\C#\cursoCSharp\cursoDeNet\obj\Debug
 C:\Users\hortomallas\Documents\Programación\C#\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.pdb
 C:\Users\hortomallas\Documents\Programación\C#\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.practicaDePOOMENU.resources
 C:\Users\hortomallas\Documents\Programación\C#\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.practicaDePOOGESTIONARCLIENTES.resources
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.practicaDePOOGESTIONARCLIENTES.resources
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.practicaDePOOMENU.resources

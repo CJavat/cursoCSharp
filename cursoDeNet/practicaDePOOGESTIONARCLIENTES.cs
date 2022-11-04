@@ -24,9 +24,19 @@ namespace cursoDeNet
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            string nombre = txbNombre.Text;
-            lstClientes.Items.Add(nombre);
+            // CREAR UN OBJETO CLASE Y AGREGARLE LOS DATOS.
+            Cliente cliente = new Cliente();
+            cliente.Nombre = txbNombre.Text;
+            cliente.Apellido = txbApellido.Text;
+            cliente.Telefono = txbTelefono.Text;
+            cliente.TarjetaDeCredito = txbTarjetaDeCredito.Text;
+
+            lstClientes.Items.Add(cliente);
             txbNombre.Text = "";
+            txbApellido.Text = "";
+            txbTelefono.Text = "";
+            txbTarjetaDeCredito.Text = ""; 
+        
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
