@@ -83,10 +83,22 @@ namespace cursoDeNet
             /*List<int> lista = traerListado();
             mostrarListado(lista);*/
 
-            // DEBUG Y DEBUGGING.
-
+            // POO.
+            // EN LAS CLASES A LAS VARIABLES SE LES LLAMA PROPIEDADES Y A LAS FUNCIONES METODOS.
+            /*
+                CONCEPTOS DE LA POO:
+                * HERENCIA --------> DARLE LAS PROPIEDADES DE LA CLASE PADRE A LA CLASE HIJA.
+                * ABSTRACCIÓN -----> OBTENER LAS CARACTERISTICAS DE LA CLASE PADRE.
+                * POLIMORFISMO ----> PODER MODIFICAR LOS MÉTODOS CREADOS EN LA CLASE PADRE.
+                * ENCAPSULAMIENTO -> PONER LAS VARIABLES COMO PUBLICO O PRIVADAS PARA QUE SE LIMITE EL ACCESO A ÉSTAS.
+            */
+            /*
+                TIPOS DE ENCAPSULAMIENTO:
+                - PUBLICO:   DESDE OTRO LUGAR DEL CÓDIGO SE VA A PODER ACCEDER.
+                - PROTEGIDO: 
+                - PRIVADO:   SOLO SE VA A PODER UTILIZAR DENTRO DE LA MISMA CLASE.
+            */
         }
-
         // CREACION DE UNA FUNCIÓN.
         private List<int> traerListado()
         {

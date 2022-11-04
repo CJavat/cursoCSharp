@@ -18,7 +18,8 @@ namespace cursoDeNet
             Application.SetCompatibleTextRenderingDefault(false);
             // Application.Run(new codigoDelCurso());
             // Application.Run(new calculadoraDelIDMC());
-            Application.Run(new ejerciciosDelCurso());
+            // Application.Run(new ejerciciosDelCurso());
+            Application.Run(new practicaDePOOMENU());
         }
     }
 }
