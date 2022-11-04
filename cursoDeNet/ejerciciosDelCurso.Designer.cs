@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.txb_num1 = new System.Windows.Forms.TextBox();
             this.lbl_num1 = new System.Windows.Forms.Label();
             this.lbl_num2 = new System.Windows.Forms.Label();
@@ -37,7 +36,6 @@
             this.txb_num3 = new System.Windows.Forms.TextBox();
             this.btnEnviarDatos = new System.Windows.Forms.Button();
             this.lblTituloEjercicio1 = new System.Windows.Forms.Label();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.lblTituloEjercicio2 = new System.Windows.Forms.Label();
             this.lblCalificacion3 = new System.Windows.Forms.Label();
             this.txbCalificacion3 = new System.Windows.Forms.TextBox();
@@ -45,7 +43,7 @@
             this.txbCalificacion2 = new System.Windows.Forms.TextBox();
             this.lblCalificacion1 = new System.Windows.Forms.Label();
             this.txbCalificacion1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTituloEjercicio3 = new System.Windows.Forms.Label();
             this.lblNumeroParOImpar = new System.Windows.Forms.Label();
             this.txbNumeroParOImpar = new System.Windows.Forms.TextBox();
             this.lblSeparador = new System.Windows.Forms.Label();
@@ -53,7 +51,11 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCalcularPrecio = new System.Windows.Forms.Button();
             this.cbbProductos = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.lblCodigoDeDescuento = new System.Windows.Forms.Label();
+            this.txbCodigoDeDescuento = new System.Windows.Forms.TextBox();
+            this.lblNumeroPrimo = new System.Windows.Forms.Label();
+            this.txbNumeroPrimo = new System.Windows.Forms.TextBox();
+            this.lblTituloEjercicio5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txb_num1
@@ -113,9 +115,9 @@
             // btnEnviarDatos
             // 
             this.btnEnviarDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnviarDatos.Location = new System.Drawing.Point(742, 132);
+            this.btnEnviarDatos.Location = new System.Drawing.Point(1088, 49);
             this.btnEnviarDatos.Name = "btnEnviarDatos";
-            this.btnEnviarDatos.Size = new System.Drawing.Size(230, 38);
+            this.btnEnviarDatos.Size = new System.Drawing.Size(149, 38);
             this.btnEnviarDatos.TabIndex = 6;
             this.btnEnviarDatos.Text = "Enviar Datos";
             this.btnEnviarDatos.UseVisualStyleBackColor = true;
@@ -195,15 +197,15 @@
             this.txbCalificacion1.Size = new System.Drawing.Size(100, 31);
             this.txbCalificacion1.TabIndex = 8;
             // 
-            // label1
+            // lblTituloEjercicio3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(701, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(344, 25);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "MOSTRAR SI ES PAR O IMPAR";
+            this.lblTituloEjercicio3.AutoSize = true;
+            this.lblTituloEjercicio3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloEjercicio3.Location = new System.Drawing.Point(701, 9);
+            this.lblTituloEjercicio3.Name = "lblTituloEjercicio3";
+            this.lblTituloEjercicio3.Size = new System.Drawing.Size(344, 25);
+            this.lblTituloEjercicio3.TabIndex = 15;
+            this.lblTituloEjercicio3.Text = "MOSTRAR SI ES PAR O IMPAR";
             // 
             // lblNumeroParOImpar
             // 
@@ -227,7 +229,7 @@
             // 
             this.lblSeparador.AutoSize = true;
             this.lblSeparador.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeparador.Location = new System.Drawing.Point(83, 166);
+            this.lblSeparador.Location = new System.Drawing.Point(46, 206);
             this.lblSeparador.Name = "lblSeparador";
             this.lblSeparador.Size = new System.Drawing.Size(1084, 25);
             this.lblSeparador.TabIndex = 18;
@@ -237,45 +239,98 @@
             // lstCarritoDeCompras
             // 
             this.lstCarritoDeCompras.FormattingEnabled = true;
-            this.lstCarritoDeCompras.Location = new System.Drawing.Point(12, 194);
+            this.lstCarritoDeCompras.Location = new System.Drawing.Point(12, 285);
             this.lstCarritoDeCompras.Name = "lstCarritoDeCompras";
-            this.lstCarritoDeCompras.Size = new System.Drawing.Size(263, 381);
+            this.lstCarritoDeCompras.Size = new System.Drawing.Size(263, 290);
             this.lstCarritoDeCompras.TabIndex = 19;
             // 
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(281, 327);
+            this.btnAgregar.Location = new System.Drawing.Point(281, 392);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(151, 38);
             this.btnAgregar.TabIndex = 20;
             this.btnAgregar.Text = "AGREGAR";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCalcularPrecio
             // 
             this.btnCalcularPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcularPrecio.Location = new System.Drawing.Point(281, 371);
+            this.btnCalcularPrecio.Location = new System.Drawing.Point(281, 436);
             this.btnCalcularPrecio.Name = "btnCalcularPrecio";
             this.btnCalcularPrecio.Size = new System.Drawing.Size(240, 38);
             this.btnCalcularPrecio.TabIndex = 21;
             this.btnCalcularPrecio.Text = "CALCULAR PRECIO";
             this.btnCalcularPrecio.UseVisualStyleBackColor = true;
+            this.btnCalcularPrecio.Click += new System.EventHandler(this.btnCalcularPrecio_Click);
             // 
             // cbbProductos
             // 
+            this.cbbProductos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbProductos.FormattingEnabled = true;
-            this.cbbProductos.Location = new System.Drawing.Point(281, 288);
+            this.cbbProductos.Location = new System.Drawing.Point(281, 353);
             this.cbbProductos.Name = "cbbProductos";
             this.cbbProductos.Size = new System.Drawing.Size(226, 33);
             this.cbbProductos.TabIndex = 22;
+            // 
+            // lblCodigoDeDescuento
+            // 
+            this.lblCodigoDeDescuento.AutoSize = true;
+            this.lblCodigoDeDescuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoDeDescuento.Location = new System.Drawing.Point(281, 285);
+            this.lblCodigoDeDescuento.Name = "lblCodigoDeDescuento";
+            this.lblCodigoDeDescuento.Size = new System.Drawing.Size(293, 25);
+            this.lblCodigoDeDescuento.TabIndex = 23;
+            this.lblCodigoDeDescuento.Text = "CODIGO DE DESCUENTO:";
+            // 
+            // txbCodigoDeDescuento
+            // 
+            this.txbCodigoDeDescuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbCodigoDeDescuento.Location = new System.Drawing.Point(580, 282);
+            this.txbCodigoDeDescuento.Name = "txbCodigoDeDescuento";
+            this.txbCodigoDeDescuento.Size = new System.Drawing.Size(149, 31);
+            this.txbCodigoDeDescuento.TabIndex = 24;
+            // 
+            // lblNumeroPrimo
+            // 
+            this.lblNumeroPrimo.AutoSize = true;
+            this.lblNumeroPrimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroPrimo.Location = new System.Drawing.Point(701, 137);
+            this.lblNumeroPrimo.Name = "lblNumeroPrimo";
+            this.lblNumeroPrimo.Size = new System.Drawing.Size(197, 25);
+            this.lblNumeroPrimo.TabIndex = 27;
+            this.lblNumeroPrimo.Text = "Ingresa un número:";
+            // 
+            // txbNumeroPrimo
+            // 
+            this.txbNumeroPrimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNumeroPrimo.Location = new System.Drawing.Point(904, 137);
+            this.txbNumeroPrimo.Name = "txbNumeroPrimo";
+            this.txbNumeroPrimo.Size = new System.Drawing.Size(100, 31);
+            this.txbNumeroPrimo.TabIndex = 26;
+            // 
+            // lblTituloEjercicio5
+            // 
+            this.lblTituloEjercicio5.AutoSize = true;
+            this.lblTituloEjercicio5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloEjercicio5.Location = new System.Drawing.Point(701, 97);
+            this.lblTituloEjercicio5.Name = "lblTituloEjercicio5";
+            this.lblTituloEjercicio5.Size = new System.Drawing.Size(333, 25);
+            this.lblTituloEjercicio5.TabIndex = 25;
+            this.lblTituloEjercicio5.Text = "MOSTRAR SI ES PRIMO O NO";
             // 
             // ejerciciosDelCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1249, 591);
+            this.Controls.Add(this.lblNumeroPrimo);
+            this.Controls.Add(this.txbNumeroPrimo);
+            this.Controls.Add(this.lblTituloEjercicio5);
+            this.Controls.Add(this.txbCodigoDeDescuento);
+            this.Controls.Add(this.lblCodigoDeDescuento);
             this.Controls.Add(this.cbbProductos);
             this.Controls.Add(this.btnCalcularPrecio);
             this.Controls.Add(this.btnAgregar);
@@ -283,7 +338,7 @@
             this.Controls.Add(this.lblSeparador);
             this.Controls.Add(this.lblNumeroParOImpar);
             this.Controls.Add(this.txbNumeroParOImpar);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTituloEjercicio3);
             this.Controls.Add(this.lblTituloEjercicio2);
             this.Controls.Add(this.lblCalificacion3);
             this.Controls.Add(this.txbCalificacion3);
@@ -301,7 +356,7 @@
             this.Controls.Add(this.txb_num1);
             this.Name = "ejerciciosDelCurso";
             this.Text = "Ejercicios Del Curso";
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            this.Load += new System.EventHandler(this.ejerciciosDelCurso_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,7 +372,6 @@
         private System.Windows.Forms.TextBox txb_num3;
         private System.Windows.Forms.Button btnEnviarDatos;
         private System.Windows.Forms.Label lblTituloEjercicio1;
-        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Label lblTituloEjercicio2;
         private System.Windows.Forms.Label lblCalificacion3;
         private System.Windows.Forms.TextBox txbCalificacion3;
@@ -325,7 +379,7 @@
         private System.Windows.Forms.TextBox txbCalificacion2;
         private System.Windows.Forms.Label lblCalificacion1;
         private System.Windows.Forms.TextBox txbCalificacion1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTituloEjercicio3;
         private System.Windows.Forms.Label lblNumeroParOImpar;
         private System.Windows.Forms.TextBox txbNumeroParOImpar;
         private System.Windows.Forms.Label lblSeparador;
@@ -333,5 +387,10 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnCalcularPrecio;
         private System.Windows.Forms.ComboBox cbbProductos;
+        private System.Windows.Forms.Label lblCodigoDeDescuento;
+        private System.Windows.Forms.TextBox txbCodigoDeDescuento;
+        private System.Windows.Forms.Label lblNumeroPrimo;
+        private System.Windows.Forms.TextBox txbNumeroPrimo;
+        private System.Windows.Forms.Label lblTituloEjercicio5;
     }
 }

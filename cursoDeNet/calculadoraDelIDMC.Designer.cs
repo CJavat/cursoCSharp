@@ -31,7 +31,7 @@
             this.lblPeso = new System.Windows.Forms.Label();
             this.txbPeso = new System.Windows.Forms.TextBox();
             this.lblAltura = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCalcular = new System.Windows.Forms.Button();
             this.txbAltura = new System.Windows.Forms.TextBox();
             this.lblResultado = new System.Windows.Forms.Label();
             this.lblMostrarResultado = new System.Windows.Forms.Label();
@@ -62,15 +62,15 @@
             this.lblAltura.TabIndex = 2;
             this.lblAltura.Text = "Dame tu Altura:";
             // 
-            // button1
+            // btnCalcular
             // 
-            this.button1.Location = new System.Drawing.Point(111, 120);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Calcular IMC";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCalcular.Location = new System.Drawing.Point(111, 120);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(90, 23);
+            this.btnCalcular.TabIndex = 3;
+            this.btnCalcular.Text = "Calcular IMC";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.button1_Click);
             // 
             // txbAltura
             // 
@@ -105,7 +105,7 @@
             this.Controls.Add(this.lblMostrarResultado);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.txbAltura);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.lblAltura);
             this.Controls.Add(this.txbPeso);
             this.Controls.Add(this.lblPeso);
@@ -121,7 +121,7 @@
         private System.Windows.Forms.Label lblPeso;
         private System.Windows.Forms.TextBox txbPeso;
         private System.Windows.Forms.Label lblAltura;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.TextBox txbAltura;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Label lblMostrarResultado;

@@ -11,3 +11,16 @@ C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet
 C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\obj\Debug\cursoDeNet.calculadoraDelIDMC.resources
 C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\obj\Debug\cursoDeNet.codigoDelCurso.resources
 C:\Users\hortomallas\Documents\Programación\C#\cursoDeNet\cursoDeNet\cursoDeNet\obj\Debug\cursoDeNet.ejerciciosDelCurso.resources
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\bin\Debug\cursoDeNet.exe.config
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\bin\Debug\cursoDeNet.exe
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\bin\Debug\cursoDeNet.pdb
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.csproj.AssemblyReference.cache
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.csproj.SuggestedBindingRedirects.cache
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.calculadoraDelIDMC.resources
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.codigoDelCurso.resources
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.ejerciciosDelCurso.resources
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.Properties.Resources.resources
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.csproj.GenerateResource.cache
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.csproj.CoreCompileInputs.cache
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.exe
+C:\Users\carme\Documents\C-Sharp\cursoCSharp\cursoDeNet\obj\Debug\cursoDeNet.pdb

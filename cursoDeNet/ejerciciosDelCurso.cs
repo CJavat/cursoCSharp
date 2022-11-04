@@ -30,7 +30,10 @@ namespace cursoDeNet
             //numeroPar();
 
             // EJERCICIO #4 - FACTURAZIÓN DE PRODUCTOS.
+            // TERMINADO.
 
+            // EJERCICIO #5 - MOSTRAR LOS 100 PRIMEROS NUMEROS PRIMOS.
+            numerosPrimos();
         }
 
         private int mayorDeLosTres()
@@ -80,9 +83,73 @@ namespace cursoDeNet
             }
         }
 
-        private void facturazionDeProductos()
+        private void numerosPrimos()
         {
+            int numeroPrimo = Int32.Parse(txbNumeroPrimo.Text);
+            bool esNumeroPrimo = true;
 
+            for (int i=2; i<numeroPrimo; i++)
+            {
+                if(numeroPrimo%i == 0)
+                {
+                    esNumeroPrimo = false;
+                }
+            }
+
+            if (esNumeroPrimo)
+            {
+                MessageBox.Show("El numero es primo", "Resultado numero primo");
+            }
+            else
+            {
+                MessageBox.Show("El numero NO es primo", "Resultado numero primo");
+            }
+        }
+
+        private void ejerciciosDelCurso_Load(object sender, EventArgs e)
+        {
+            // AÑADIR ITEMS AL COMBOBOX.
+            cbbProductos.Items.Add("Pantalon");
+            cbbProductos.Items.Add("Camisa");
+            cbbProductos.Items.Add("Zapatos");
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            string productoSelecionado = cbbProductos.SelectedItem.ToString(); // OBTENER EL ARTICULO SELECCIONADO EN EL COMBOBOX.
+            lstCarritoDeCompras.Items.Add(productoSelecionado); // AGREGA EL ARTICULO EN LA LISTA.s
+        }
+
+        private void btnCalcularPrecio_Click(object sender, EventArgs e)
+        {
+            double precioFinal = 0;
+            int totalProductosCargados = lstCarritoDeCompras.Items.Count; // CUENTA CUANTOS ITEMS HAY EN LA LISTA DE CARRITOS.
+
+            for (int i=0; i < totalProductosCargados; i++)
+            { // RECORRE LA LISTA PARA IR SUMANDO EL PRECIO DE LOS ITEMS.
+                string productoElegido = lstCarritoDeCompras.Items[i].ToString(); // LE PASA EL VALOR DEL ITEM.
+                // COMPROBACION DE LO QUE SE HA AGREGADO A LA LISTA PARA HACER LA SUMA CORRESPONDIENTE.
+                if(productoElegido == "Pantalon")
+                {
+                    precioFinal += 20;
+                }
+                else if(productoElegido == "Camisa")
+                {
+                    precioFinal += 35;
+                }
+                else if(productoElegido == "Zapatos")
+                {
+                    precioFinal += 24;
+                }
+            }
+
+            // VERIFICA QUE HAYA INTRODUCIDO EL CODIGO DE DESCUENTO PARA HACER VALIDO EL DESCUENTO.
+            if(txbCodigoDeDescuento.Text == "NAVIDAD")
+            {
+                precioFinal *= 0.90; // DESCUENTO DE 10%.
+            }
+            
+            MessageBox.Show("El precio final es: " + precioFinal, "Precio Final"); // MOSTRAR EL PRECIO FINAL (TENIENDO O NO TENIENDO EL DESCUENTO).
         }
     }
 }
