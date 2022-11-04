@@ -16,7 +16,9 @@ namespace cursoDeNet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            // Application.Run(new codigoDelCurso());
+            // Application.Run(new calculadoraDelIDMC());
+            Application.Run(new ejerciciosDelCurso());
         }
     }
 }

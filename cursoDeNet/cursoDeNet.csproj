@@ -46,16 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="codigoDelCurso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="codigoDelCurso.Designer.cs">
+      <DependentUpon>codigoDelCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calculadoraDelIDMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calculadoraDelIDMC.Designer.cs">
+      <DependentUpon>calculadoraDelIDMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ejerciciosDelCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ejerciciosDelCurso.Designer.cs">
+      <DependentUpon>ejerciciosDelCurso.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="calculadoraDelIDMC.resx">
+      <DependentUpon>calculadoraDelIDMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="codigoDelCurso.resx">
+      <DependentUpon>codigoDelCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ejerciciosDelCurso.resx">
+      <DependentUpon>ejerciciosDelCurso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
