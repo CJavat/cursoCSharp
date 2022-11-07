@@ -31,9 +31,6 @@ namespace cursoDeNet
         }
 
         // CREAR UN METODO PARA QUE SE VEAN BIEN TODOS LOS DATOS EN LA LISTA QUE SE AGREGARON CON LAS CLASES
-        public override string ToString()
-        {
-            return NombreCompleto;
-        }
+        
     }
 }
